@@ -1,0 +1,19 @@
+body {
+    background-color: brown;
+    color: black;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    margin-top: 40px;
+}
+
+h1 {
+    color: white;
+}
+
+.list-group-item {
+    cursor: pointer;
+}
+
+

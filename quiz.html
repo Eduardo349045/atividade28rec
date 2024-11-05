@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Programação</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header class="bg-primary text-white text-center py-3">
+        <h1>Quiz de Programação</h1>
+        <nav class="nav justify-content-center">
+            <a class="nav-link text-white" href="index.html">Início</a>
+            <a class="nav-link text-white" href="linguagens.html">Linguagens e Frameworks</a>
+        </nav>
+    </header>
+
+    <section class="container mt-4">
+        <h2>Teste seu conhecimento</h2>
+        <p>Escolha a resposta correta:</p>
+        <div id="quiz" class="mb-3">
+            <p>1. Qual framework é desenvolvido pelo Google para grandes aplicações?</p>
+            <button class="btn btn-outline-primary mb-2" onclick="checkAnswer('Angular', 1)">Angular</button>
+            <button class="btn btn-outline-primary mb-2" onclick="checkAnswer('React', 1)">React</button>
+            <button class="btn btn-outline-primary mb-2" onclick="checkAnswer('Vue.js', 1)">Vue.js</button>
+
+            <p>2. Qual linguagem é conhecida por ser usada em IA e ciência de dados?</p>
+            <button class="btn btn-outline-primary mb-2" onclick="checkAnswer('Python', 2)">Python</button>
+            <button class="btn btn-outline-primary mb-2" onclick="checkAnswer('JavaScript', 2)">JavaScript</button>
+            <button class="btn btn-outline-primary mb-2" onclick="checkAnswer('Java', 2)">Java</button>
+
+            <p id="resultado" class="mt-3"></p>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
